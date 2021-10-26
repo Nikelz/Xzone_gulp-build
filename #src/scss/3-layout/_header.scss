@@ -1,0 +1,82 @@
+.header {
+    padding: 40px 0 40px;
+    @media (max-width: $screen-md1) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        z-index: 99;
+        background: #111827;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+    }
+
+    &__navbar {
+    }
+}
+.menu {
+    &__icon {
+    }
+
+    &__body {
+    }
+}
+.nav {
+    @media (max-width: $screen-md1) {
+        position: absolute;
+        top: -105%;
+        left: 0;
+        z-index: 98;
+        width: 100%;
+        background: #111827;
+        padding: 25px 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s linear;
+    }
+    &--active {
+        @media (max-width: $screen-md1) {
+            border-top: 2px solid #d946ef;
+            top: 100%;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: space-around;
+    }
+
+    &__item {
+        margin-bottom: 20px;
+        &:not(:first-of-type) {
+            margin-left: 15px;
+        }
+        @media (min-width: $screen-md1) {
+            &:not(:first-of-type) {
+                margin-left: 60px;
+            }
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 500;
+        transition: color 0.2s linear;
+        &:hover {
+            color: #6c66c8;
+        }
+    }
+
+    &__btn {
+        padding: 12px 33px 12px 24px;
+    }
+}

@@ -1,0 +1,149 @@
+.footer {
+    padding: 32px 0 0;
+    color: rgba(255, 255, 255, 0.8) !important;
+
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__logo {
+    }
+
+    &__contacts {
+        margin-top: 16px;
+    }
+
+    &__social {
+        margin-top: 15px;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: flex-start;
+
+        flex-wrap: wrap;
+        width: 100%;
+        @media (min-width: $screen-md2) {
+            max-width: 70%;
+            justify-content: space-between;
+        }
+    }
+}
+.contact-footer {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    transition: all 0.2s linear;
+    &:hover {
+        color: #6c66c8;
+    }
+    &__icon {
+        margin-right: 11.5px;
+    }
+}
+.social-footer {
+    display: flex;
+    align-items: flex-start;
+    &__item {
+        width: 32.2px;
+        height: 32.2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        margin-right: 15px;
+
+        transition: all 0.3s linear;
+        &:hover {
+            background: #6c66c8;
+        }
+    }
+}
+.menu-footer {
+    &__col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @media (max-width: $screen-md2) {
+            margin-bottom: 20px;
+            margin-right: 20px;
+            width: 45%;
+        }
+    }
+
+    &__title {
+        font-family: "MDSans-Medium", sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 40px;
+        letter-spacing: 0.01em;
+        color: #fff;
+    }
+
+    &__item {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 40px;
+
+        letter-spacing: 0.01em;
+        transition: color 0.3s linear;
+        &:hover {
+            color: #6c66c8;
+        }
+    }
+}
+
+.copyright {
+    margin-top: 32px;
+    border-top: 1px solid #969696;
+    padding: 33px 0 36px;
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        @media (max-width: $screen-md3) {
+            flex-direction: column;
+        }
+    }
+
+    &__title {
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    &__menu {
+        @media (max-width: $screen-md3) {
+            margin-top: 20px;
+        }
+    }
+}
+.menu-copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 260px;
+    &__item {
+        font-size: 14px;
+        line-height: 14px;
+        transition: 0.1s linear;
+        &:hover {
+            color: #6c66c8;
+        }
+    }
+}
